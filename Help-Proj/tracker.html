@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobriety Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Recovery Support</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tracker.html">Sobriety Tracker</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="https://www.samhsa.gov/find-help/national-helpline" target="_blank">Crisis Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Sobriety Tracker</h2>
+            <form id="tracker-form">
+                <label for="date">Date:</label><br>
+                <input type="date" id="date" required><br><br>
+
+                <label for="mood">Mood:</label><br>
+                <select id="mood" required>
+                    <option value="Happy">Happy</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Struggling">Struggling</option>
+                </select><br><br>
+
+                <label for="triggers">Notes/Triggers:</label><br>
+                <textarea id="triggers" rows="4" cols="50"></textarea><br><br>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Recovery Support. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
